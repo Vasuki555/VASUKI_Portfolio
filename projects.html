@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects & Experience</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9; 
+            color: #222222;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #2c3e50; 
+            padding: 15px 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #2c3e50;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.8em;
+            color: #2c3e50;
+        }
+
+        .projects-container, .experience-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(26, 188, 156, 0.4);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .card p {
+            color: #555555;
+        }
+
+        .tools {
+            margin-top: 10px;
+            font-style: italic;
+            color: #888888;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: #16a085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f9f9f9;
+            color: #888888;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>Projects & Experience</h1>
+</header>
+
+<section class="projects-container">
+
+    <div class="card">
+        <h3>Job Recommendation System</h3>
+        <p>An AI-powered tool that matches resumes with the most relevant job opportunities using NLP and Machine Learning.</p>
+        <p class="tools"><strong>Tools/Technologies:</strong> Streamlit, Pandas, Machine Learning, NLP</p>
+        <a href="#">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>News App</h3>
+        <p>Fetches the latest news from APIs, allowing users to read based on categories and preferences.</p>
+        <p class="tools"><strong>Tools/Technologies:</strong> HTML, CSS, JavaScript, News API</p>
+        <a href="#">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>University Asset Management System</h3>
+        <p>Manages university equipment, assets, and resources with real-time tracking and reports.</p>
+        <p class="tools"><strong>Tools/Technologies:</strong> PHP, MySQL, Bootstrap</p>
+        <a href="#">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>Cloud Burst Navigation System</h3>
+        <p>Navigation system for emergency response during cloudbursts, integrating live weather and road data.</p>
+        <p class="tools"><strong>Tools/Technologies:</strong> Python, Flask, OpenWeather API, Google Maps API</p>
+        <a href="#">View Project</a>
+    </div>
+
+</section>
+
+<footer>
+    &copy; 2025 Vasuki. All Rights Reserved.
+</footer>
+
+</body>
+</html>

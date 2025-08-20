@@ -1,0 +1,192 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasuki | Portfolio</title>
+    <style>
+
+ body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #222222;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 50px;
+            background-color: #2c3e50;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        .main-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 80px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .text-section {
+            max-width: 500px;
+        }
+        .text-section h3 {
+            font-weight: 400;
+            font-size: 1.1em;
+            color: #555555;
+        }
+        .text-section h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        .text-section h1 span {
+            color: #1abc9c;
+        }
+        .text-section p {
+            color: #222222;
+            line-height: 1.6;
+            font-size: 1em;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 12px;
+            color: #2c3e50;
+            font-size: 1.3em;
+            border: 1px solid #2c3e50;
+            padding: 8px;
+            border-radius: 50%;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #16a085;
+        }
+
+        .image-section {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid #1abc9c;
+            flex-shrink: 0;
+        }
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="main-container" id="home">
+        <div class="content">
+            <div class="text-section">
+                <h3>Hello, I'm</h3>
+                <h1><strong>Vasuki</strong></h1>
+                <h1>Full-Stack Developer & <span>Data Science Enthusiast</span></h1>
+                <p>
+                    Passionate about building impactful, scalable, and user-focused solutions.
+                    Skilled in web development, AI, and software engineering.
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vasuki" target="_blank" title="LinkedIn">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.12 2.5-2.5 2.5S0 4.881 0 3.5 1.12 1 2.5 1s2.48 1.119 2.48 2.5zM.06 8.98h4.92v15H.06v-15zm7.09 0h4.71v2.05h.07c.66-1.25 2.27-2.56 4.67-2.56 4.99 0 5.91 3.28 5.91 7.55v8.96h-4.92v-7.94c0-1.9-.03-4.35-2.65-4.35-2.65 0-3.06 2.07-3.06 4.2v8.09H7.15v-15z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/vasuki" target="_blank" title="GitHub">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.304-5.467-1.334-5.467-5.933 0-1.31.467-2.382 1.236-3.222-.124-.303-.536-1.524.116-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.288-1.552 3.294-1.23 3.294-1.23.654 1.653.242 2.874.118 3.176.77.84 1.234 1.912 1.234 3.222 0 4.609-2.807 5.625-5.479 5.921.429.37.823 1.096.823 2.21v3.285c0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.hackerrank.com/vasuki" target="_blank" title="HackerRank">
+                       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 512 512">
+                            <path d="M256 0L0 128v256l256 128 256-128V128L256 0zm0 66.7l182.1 91.5v182.6L256 445.3 73.9 340.8V158.2L256 66.7z"/>
+                        </svg>
+                    </a>
+                    <a href="https://leetcode.com/vasuki" target="_blank" title="LeetCode">
+                       
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 512 512">
+                            <path d="M439.8 72.2c-42.1-42.1-110.5-42.1-152.6 0-42.1 42.1-42.1 110.5 0 152.6 42.1 42.1 110.5 42.1 152.6 0 42.1-42.1 42.1-110.5 0-152.6zm-42.3 110.3c-21.1 21.1-55.3 21.1-76.4 0-21.1-21.1-21.1-55.3 0-76.4 21.1-21.1 55.3-21.1 76.4 0 21.1 21.1 21.1 55.3 0 76.4z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:vasukirevathi555@gmail.com" title="Email">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 512 512">
+                            <path d="M502.3 190.8L327.4 338.9c-27.7 23.7-69.9 23.7-97.6 0L9.7 190.8C3.9 186.3 0 179.3 0 172.0V80c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v92c0 7.3-3.9 14.3-9.7 18.8zM0 212v180c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V212l-158.6 135.9c-39.2 33.5-95.8 33.5-135 0L0 212z"/>
+                        </svg>
+                    </a>
+                </div>
+            
+                <a href="Vasuki_Resume.pdf" class="btn" download>Download CV</a>
+            </div>
+            <div class="image-section">
+                <img src="profile.png" alt="Vasuki Profile">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+link  to this

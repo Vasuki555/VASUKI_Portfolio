@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #222222;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 50px;
+            background-color: #2c3e50;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            color: #1abc9c;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .skills-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 100px;
+        }
+        .skills-right {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+        .skill {
+            margin-bottom: 45px;
+        }
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #222222;
+        }
+        .skills-left {
+            flex: 1;
+            max-width: 600px; 
+        }
+        .skill-bar {
+            width: 400px;  
+            height: 15px;
+            background-color: #e0e0e0;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .skill-level {
+            height: 100%;
+            background-color: #1abc9c;
+            text-align: right;
+            padding-right: 12px;
+            line-height: 15px;    
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 14px 0 0 14px;
+        }
+        .pie-chart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #1abc9c 0% 40%,
+                #16a085 40% 65%,
+                #2ecc71 65% 80%,
+                #f1c40f 80% 90%,
+                #e67e22 90% 100%
+            );
+            margin: 0 auto 20px;
+        }
+        .legend {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            color: #222222;
+        }
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f9f9f9;
+            color: #555555;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-right {
+                flex: none;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<header>
+    <h1>My Skills</h1>
+</header>
+<section class="skills-container">
+   
+    <div class="skills-left">
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;">70%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;">75%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 88%;">88%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">React.js</div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;">80%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-right">
+        <div class="pie-chart"></div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background-color:#1abc9c;"></div>Frontend (40%)</div>
+            <div class="legend-item"><div class="legend-color" style="background-color:#16a085;"></div>Backend (25%)</div>
+            <div class="legend-item"><div class="legend-color" style="background-color:#2ecc71;"></div>Database (15%)</div>
+            <div class="legend-item"><div class="legend-color" style="background-color:#f1c40f;"></div>UI/UX (10%)</div>
+            <div class="legend-item"><div class="legend-color" style="background-color:#e67e22;"></div>Cybersecurity (10%)</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Vasuki. All Rights Reserved.
+</footer>
+
+</body>
+</html>
